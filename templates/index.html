@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>批量图片处理</title>
+    <meta charset="UTF-8">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .container {
+            border: 2px dashed #ccc;
+            padding: 20px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        #fileList {
+            margin: 20px 0;
+            text-align: left;
+        }
+        #results {
+            margin-top: 20px;
+            border: 1px solid #eee;
+            padding: 10px;
+        }
+        .progress {
+            margin-top: 10px;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>批量图片上传处理</h2>
+        <input type="file" id="fileInput" multiple accept="image/*">
+        <div id="fileList"></div>
+        <input type="text" id="query" placeholder="输入处理提示语（默认：请抽取这张图片中的文字）">
+        <button onclick="uploadFiles()">开始处理</button>
+        <div class="progress">处理中...</div>
+    </div>
+    <div id="results"></div>
+
+    <script>
+        function uploadFiles() {
+            const files = document.getElementById('fileInput').files;
+            if (files.length === 0) {
+                alert('请选择文件');
+                return;
+            }
+
+            const formData = new FormData();
+            for (let file of files) {
+                formData.append('files[]', file);
+            }
+
+            const query = document.getElementById('query').value;
+            if (query) {
+                formData.append('query', query);
+            }
+
+            document.querySelector('.progress').style.display = 'block';
+            
+            fetch('/process', {
+                method: 'POST',
+                body: formData
+            })
+            .then(response => response.json())
+            .then(data => {
+                document.querySelector('.progress').style.display = 'none';
+                displayResults(data);
+            })
+            .catch(error => {
+                document.querySelector('.progress').style.display = 'none';
+                alert('处理出错: ' + error);
+            });
+        }
+
+        function displayResults(data) {
+            const resultsDiv = document.getElementById('results');
+            let html = '<h3>处理结果：</h3>';
+            html += `<p>结果文件：${data.result_file}</p>`;
+            
+            data.results.forEach(result => {
+                html += `<div style="margin: 10px 0; padding: 10px; border: 1px solid #ddd;">`;
+                html += `<h4>文件：${result.filename}</h4>`;
+                if (result.error) {
+                    html += `<p style="color: red;">错误：${result.error}</p>`;
+                } else {
+                    html += `<p>回答：${result.answer}</p>`;
+                    if (result.metadata && result.metadata.usage) {
+                        html += `<p>Token数：${result.metadata.usage.total_tokens}</p>`;
+                        html += `<p>费用：$${result.metadata.usage.total_price} ${result.metadata.usage.currency}</p>`;
+                    }
+                }
+                html += '</div>';
+            });
+            
+            resultsDiv.innerHTML = html;
+        }
+
+        // 显示选择的文件列表
+        document.getElementById('fileInput').addEventListener('change', function(e) {
+            const fileList = document.getElementById('fileList');
+            fileList.innerHTML = '<h4>已选择的文件：</h4>';
+            for (let file of this.files) {
+                fileList.innerHTML += `<div>${file.name}</div>`;
+            }
+        });
+    </script>
+</body>
+</html>

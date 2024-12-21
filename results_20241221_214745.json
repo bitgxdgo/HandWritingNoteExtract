@@ -1,0 +1,44 @@
+[
+  {
+    "filename": "日记-1.png",
+    "file_id": "376543c9-3a36-4277-978f-ef476cc8af25",
+    "answer": "\n\n2021.01.01\n\n搞了一个乌龙。\n\n“《逢魔日记》是我在简书上传的，结果我误将日期写成了1月1日，还在想，这篇日记挺好的呀（1月1日发布）。上午发布了《1月1日的日记》，我才知道原来该传前一天的。小闵调侃说：“你干嘛不补前一天的日记呀！”我说：“不过补日记多好嘛！”小闵就把这事抛之脑后了。\n\n正在补写这段的时候，哎呀，不该说是补，我誊写到一半时，丫进来了。\n\n丫说你在写什么？我警惕了，说：“《日记》。”\n\n此刻我唯一能看清的是朋友的狗狗在山里走失，还好好地跟自己回到了基地等我们。\n\n这篇日记篇幅很长，但我却花了2000多字的篇幅写了这些！",
+    "metadata": {
+      "usage": {
+        "prompt_tokens": 1344,
+        "prompt_unit_price": "0.0",
+        "prompt_price_unit": "0.0",
+        "prompt_price": "0.0",
+        "completion_tokens": 213,
+        "completion_unit_price": "0.0",
+        "completion_price_unit": "0.0",
+        "completion_price": "0.0",
+        "total_tokens": 1557,
+        "total_price": "0.0",
+        "currency": "USD",
+        "latency": 14.14610488100152
+      }
+    }
+  },
+  {
+    "filename": "日记-2.png",
+    "file_id": "cab9b32f-1afd-4ab9-990c-bff8d6ab3477",
+    "answer": "以下是图片中提取出的文字内容：\n\n“一切都在沉寂，八月是夏天的午后。但期待早餐，迎接初秋的时刻终于来临。\n\n早餐有中式烧烤，为了抢到而早早去公司（笑）。夜色渐转紫蓝，天色从蓝变为橘。公车空荡荡的座位显得很寂寞，害怕迟到的心绪在空气中弥漫。\n\n时间已经是八月了，中雨整整下了一周，潮湿的空气让人心情烦闷。\n\n😅这就是我的心情写照。”\n\n",
+    "metadata": {
+      "usage": {
+        "prompt_tokens": 1344,
+        "prompt_unit_price": "0.0",
+        "prompt_price_unit": "0.0",
+        "prompt_price": "0.0",
+        "completion_tokens": 111,
+        "completion_unit_price": "0.0",
+        "completion_price_unit": "0.0",
+        "completion_price": "0.0",
+        "total_tokens": 1455,
+        "total_price": "0.0",
+        "currency": "USD",
+        "latency": 6.573925085998781
+      }
+    }
+  }
+]
