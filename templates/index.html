@@ -88,7 +88,8 @@
                 if (result.error) {
                     html += `<p style="color: red;">错误：${result.error}</p>`;
                 } else {
-                    html += `<p>回答：${result.answer}</p>`;
+                    html += `<p><strong>标题：</strong>${result.title}</p>`;
+                    html += `<p><strong>内容：</strong>${result.answer}</p>`;
                     if (result.metadata && result.metadata.usage) {
                         html += `<p>Token数：${result.metadata.usage.total_tokens}</p>`;
                         html += `<p>费用：$${result.metadata.usage.total_price} ${result.metadata.usage.currency}</p>`;

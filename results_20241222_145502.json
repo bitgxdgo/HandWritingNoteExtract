@@ -1,0 +1,46 @@
+[
+  {
+    "filename": "日记-3.png",
+    "file_id": "7edfc861-1f6f-45a1-bee8-b670883dea19",
+    "title": "我的教育生涯的最后之日，留下了什么样的印象？",
+    "answer": "昨晚带着心烦入睡，今早怀着憂慮睁眼，而且无比清醒；从昨晚睡前延续至今那种「我实在想写些什么」的心情持续发酵，于是一早便抱著笔电动笔了，写下了（前因后果）。\n\n只能说，或许结局并未如我预期那般纯，却也算是我所想要的结果了，忍不住自我调侃，当天早上我还发了动态思考著「如果小曦不再当老师了？」呢，结果就真的让我们心想事成了。\n\n这几年來还是有点所成的；从我踏进这所学校以来带的第一届到最后一批，都有学生与我保持联系，且发讯息告诉我他们印象中所喜爱的我的上课方式和风格。学生口中的我是有共同笑点且始终如一的——\n笔记虽多却让人更加印象深刻。",
+    "metadata": {
+      "usage": {
+        "prompt_tokens": 698,
+        "prompt_unit_price": "0.0",
+        "prompt_price_unit": "0.0",
+        "prompt_price": "0.0",
+        "completion_tokens": 183,
+        "completion_unit_price": "0.0",
+        "completion_price_unit": "0.0",
+        "completion_price": "0.0",
+        "total_tokens": 881,
+        "total_price": "0.0",
+        "currency": "USD",
+        "latency": 6.952023254001688
+      }
+    }
+  },
+  {
+    "filename": "日记-4.png",
+    "file_id": "54d9375c-4a2b-4aef-bda3-ecdc85fd5020",
+    "title": "\"《Mala kapahay》：波澜壮阔的阿美族都蘭部落故事\"",
+    "answer": "五月一日天气晴\n昨天从台东回来。\n路上读完了 Kate 推特的书：《Mala kapahay\n就这样我们一起慢漫长大了。都蘭部落青年\n成长史》。是一本不到 150 页的小書。但读完我\n觉得用“波澜壮阔”來形容。雖然裡頭的原始幽默輕鬆\n然而故事实际上\n是關於阿美族都蘭部落的年輕人階層組織，一度因人口外移而難以维系，近年又再復\n活，有一代一代的年輕人加入，和他们在\n家乡，或在異地的人生故事接在一起，成为活著的傳統。真的是了不得。過者說\n现在进行式\n的\n我讀的人觉得真的是波澜壮阔的\n（笑淚俱下吧）\n是一种大江大海",
+    "metadata": {
+      "usage": {
+        "prompt_tokens": 967,
+        "prompt_unit_price": "0.0",
+        "prompt_price_unit": "0.0",
+        "prompt_price": "0.0",
+        "completion_tokens": 189,
+        "completion_unit_price": "0.0",
+        "completion_price_unit": "0.0",
+        "completion_price": "0.0",
+        "total_tokens": 1156,
+        "total_price": "0.0",
+        "currency": "USD",
+        "latency": 12.787764046996017
+      }
+    }
+  }
+]
